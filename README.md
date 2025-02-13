@@ -21,12 +21,12 @@ cd keep_macos_controllers_active
 
 ### 2️⃣ Make the Script Executable
 ```bash
-chmod +x keep_controllers_active.sh
+chmod +x keep_controllers_active_when_ryujinx.sh
 ```
 
 ### 3️⃣ Run the Script
 ```bash
-./keep_controllers_active.sh
+./keep_controllers_active_when_ryujinx.sh
 ```
 
 To stop the script, press `CTRL + C`.
@@ -41,7 +41,7 @@ If you want the script to run automatically at startup:
    ```
 2. Add this line at the end:
    ```bash
-   @reboot /path/to/keep_controllers_active.sh &
+   @reboot /path/to/keep_controllers_active_when_ryujinx.sh &
    ```
    (Replace `/path/to/` with the actual script location.)
 
@@ -49,7 +49,7 @@ If you want the script to run automatically at startup:
 
 ## 🛠 Configuration
 ### ✏️ Update Controller MAC Addresses
-Edit the `keep_controllers_active.sh` file and replace the `CONTROLLERS` array with your own controller MAC addresses:
+Edit the `keep_controllers_active_when_ryujinx.sh` file and replace the `CONTROLLERS` array with your own controller MAC addresses:
 ```bash
 CONTROLLERS=(
     "XX:XX:XX:XX:XX:XX"
